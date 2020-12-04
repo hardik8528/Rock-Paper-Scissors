@@ -64,4 +64,12 @@ rpsFinal = (HumanImageChoice,BotImageChoice,message)=>{
     document.getElementById("flex-container").appendChild(HumanDiv);
     document.getElementById("flex-container").appendChild(MessageDiv);
     document.getElementById("flex-container").appendChild(BotDiv);
+
+    RestartDiv = document.createElement("div");
+    RestartDiv.innerHTML = "<button type='button' class='btn btn-dark' onclick='restart()'>Restart</button>";
+    document.getElementById("restart").appendChild(RestartDiv);
+}
+
+restart = () =>{
+    location.reload();
 }
